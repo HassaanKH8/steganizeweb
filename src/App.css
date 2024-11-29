@@ -3,11 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #efeee9;
+}
 .Page {
   height: 100vh;
   background-color: #efeee9;
   justify-items: center;
+}
+
+.activity {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
 .titleheading {
@@ -52,7 +60,7 @@
   transform: translate(2px, 2px);
 }
 
-.plusbtn{
+.plusbtn {
   width: 300px;
   height: 300px;
   color: #efeee9;
@@ -66,7 +74,7 @@
   border-color: #36454f80;
 }
 
-.imageContainer{
+.imageContainer {
   width: 300px;
   height: 300px;
   color: #efeee9;
@@ -75,14 +83,14 @@
   cursor: pointer;
 }
 
-.plusbtn h1{
+.plusbtn h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #36454f;
   font-size: 25px;
 }
 
-#textInput{
+#textInput {
   width: 90%;
   padding: 10px;
   display: block;
@@ -96,4 +104,21 @@
 
 #textInput::placeholder {
   color: #dad9d3;
+}
+
+.DecodedMessageHeading {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  color: #36454f;
+  margin-top: 50px;
+}
+
+.DecodedMessage {
+  font-size: 18px;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #36454f;
+  text-align: center;
+  width: 80%;
 }
