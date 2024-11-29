@@ -17,10 +17,3 @@ This is a simple web application that allows users to encode and decode hidden t
 2. **Decoding**:
    - To reveal the hidden message, users can upload the image that contains the secret text.
    - The app extracts the hidden message from the image and displays it.
-
-## Installation
-
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/yourusername/your-repository-name.git
