@@ -1,14 +1,13 @@
 import React, { useRef, useState } from 'react';
 import './App.css'
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
 
 const Encode = () => {
     const [image, setImage] = useState(null);
     const fileInputRef = useRef(null);
     const [text, setText] = useState("");
-    const API_URL = process.env.API_URL
-    const navigate = useNavigate();
+    const apiUrl = process.env.REACT_APP_API_URL;
+
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
@@ -37,7 +36,7 @@ const Encode = () => {
         formData.append("message", text);
     
         try {
-          const response = await axios.post(`${API_URL}/encode`, formData, {
+          const response = await axios.post(`${apiUrl}/encode`, formData, {
             headers: {
               "Content-Type": "multipart/form-data",
             },
