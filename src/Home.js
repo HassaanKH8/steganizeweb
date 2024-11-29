@@ -8,8 +8,10 @@ const Home = () => {
     return (
         <div className='Page'>
             <h1 className='titleheading'>Hide and Reveal Text in Image</h1>
-            <button className='mainbutton' onClick={()=>{navigate('/encode');}}>ENCODE IMAGE</button>
-            <button className='mainbutton' onClick={()=>{navigate('/decode');}}>DECODE IMAGE</button>
+            <div>
+                <button className='mainbutton' onClick={() => { navigate('/encode'); }}>ENCODE IMAGE</button>
+                <button className='mainbutton' onClick={() => { navigate('/decode'); }}>DECODE IMAGE</button>
+            </div>
         </div>
     );
 };

@@ -7,7 +7,6 @@
 .Page {
   height: 100vh;
   background-color: #efeee9;
-  align-content: center;
   justify-items: center;
 }
 
@@ -16,14 +15,8 @@
   color: #36454f;
   font-weight: 600;
   word-spacing: 3px;
+  padding-top: 100px;
   margin-bottom: 20px;
-}
-.titleheading2 {
-  font-family: "Inter", sans-serif;
-  color: #36454f;
-  font-weight: 600;
-  word-spacing: 3px;
-  margin-bottom: 30px;
 }
 
 .mainbutton {
@@ -33,6 +26,7 @@
   box-shadow: #36454f 4px 4px 0 0;
   color: #36454f;
   cursor: pointer;
+  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   display: inline-block;
@@ -72,9 +66,34 @@
   border-color: #36454f80;
 }
 
+.imageContainer{
+  width: 300px;
+  height: 300px;
+  color: #efeee9;
+  justify-items: center;
+  align-content: center;
+  cursor: pointer;
+}
+
 .plusbtn h1{
   font-family: "Inter", sans-serif;
   font-weight: 500;
   color: #36454f;
   font-size: 25px;
+}
+
+#textInput{
+  width: 90%;
+  padding: 10px;
+  display: block;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #36454f;
+  background-color: #36454f;
+  color: #efeee9;
+  font-family: "Inter", sans-serif;
+}
+
+#textInput::placeholder {
+  color: #dad9d3;
 }
